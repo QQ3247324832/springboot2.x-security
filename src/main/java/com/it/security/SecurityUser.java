@@ -1,6 +1,6 @@
-package com.wuxicloud.security;
+package com.it.security;
 
-import com.wuxicloud.model.User;
+import com.it.domain.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,15 +9,16 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class SecurityUser extends User implements UserDetails {
-    private static final long serialVersionUID = 1L;
+
+    private static final long serialVersionUID = 991427483790164981L;
 
     public SecurityUser(User user) {
         if (user != null) {
-            this.setUserUuid(user.getUserUuid());
+            this.setUserCode(user.getUserCode());
             this.setUsername(user.getUsername());
             this.setPassword(user.getPassword());
             this.setEmail(user.getEmail());
-            this.setTelephone(user.getTelephone());
+            this.setPhone(user.getPhone());
             this.setRole(user.getRole());
             this.setImage(user.getImage());
             this.setLastIp(user.getLastIp());
