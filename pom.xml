@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.it</groupId>
-    <artifactId>spring-security-login</artifactId>
+    <artifactId>springboot2.x-security</artifactId>
     <version>1.0</version>
     <description>SpringBoot2.x整合SpringSecurity实现简单登录</description>
 
